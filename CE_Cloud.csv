@@ -1,0 +1,58 @@
+Course Code,Course Name,Description,Prerequisites,Co-requisites,Credit Hours,Semester Offered,Program/Track
+MAT111,Mathematics I,Introduction to calculus and algebra.,,,3,Fall,All
+MEC011,Engineering Drawing (1),Technical drawing and CAD basics.,,,3,Fall,"Computer Engineering, AI Engineering"
+PHY212,Introduction to Engineering Physics,Fundamentals of physics for engineers.,,,3,Fall,"Computer Engineering, AI Engineering"
+CSE014,Structured Programming,Fundamentals of structured programming.,,,3,Fall,All
+MAT123,Mechanics,,,,3,Fall,"Computer Engineering, AI Engineering"
+UC1,University Requirement (1),"General education (e.g., humanities).",,,2,Fall,All
+MAT112,Mathematics II,Advanced calculus and analysis.,MAT111,,3,Spring,All
+CSE015,Object Oriented Programming,Principles of OOP and design.,CSE014,,3,Spring,All
+MAT131,Probability & Statistics I,,,,3,Spring,
+CSE316,Discrete Mathematics,"Logic, sets, and combinatorics.",MAT111,,3,Spring,All
+UC2,University Requirement (2),General education course.,,,2,Spring,All
+UC3,University Requirement (3),General education course.,,,2,Spring,All
+MAT212,Linear Algebra,Vector spaces and matrices.,MAT112,,3,Fall,All
+CSE131,Logic Design ,,,,3,Fall,
+CSE113,Data Structures,"Arrays, trees, and hash tables.",CSE015,,3,Fall,All
+CSE134,Electric & Electronic Circuits,Basics of circuits and electronics.,PHY212,,3,Fall,"Computer Engineering, AI Engineering"
+UC4,University Requirement (4),General education course.,,,2,Fall,All
+UC5,University Requirement (5),General education course.,,,2,Fall,All
+MAT231,Probability & Statistics II,Advanced probability theory.,MAT131,,3,Spring,AI Engineering
+MAT312,Differential Equations,Ordinary and PDEs.,MAT212,,3,Spring,AI Engineering
+ALE112,Artificial Intelligence,Introduction to AI concepts.,CSE015,,3,Spring,AI Engineering
+E1,Elective Course (1),Track-specific elective.,Department approval,,3,Spring,AI Engineering
+CSE132,Computer Architecture,Design of computer systems.,CSE131,,3,Spring,Computer Engineering
+CSE221,Database Systems,SQL and database design.,CSE113,,3,Fall,All
+CSE233,Operating Systems,Processes and memory management.,CSE113,,3,Fall,All
+ALE121,Machine Learning,Fundamentals of ML algorithms.,ALE112,,3,Fall,AI Engineering
+E2,Elective Course (2),Track-specific elective.,Department approval,,3,Fall,AI Engineering
+CSE291,Field Training in AI,Practical CS applications.,,,2,Fall,AI Engineering
+UE1,University Elective,General engineering elective.,Department approval,,2,Fall,AI Engineering
+CSE112,Design & Analysis of Algorithms,Complexity and sorting.,CSE111,,4,Spring,All
+CSE251,Software Engineering,SDLC and Agile methodologies.,CSE015,,3,Spring,All
+CSE261,Computer Networks,OSI model and protocols.,CSE132,,3,Spring,All
+CSE234,Embedded Systems,Design of embedded systems.,CSE132,,3,Spring,Computer Engineering
+CSE211,Web Programming ,,CSE015,,3,Spring,
+ELE432,Digital Signals Processing,,,,3,Fall,
+CSE242,Cryptography ,,CSE112,,3,Fall,
+CSE344,Introduction to CyperSecurity,,,,3,Fall,
+CSE363,Cloud Computing,,CSE261,,3,Fall,
+UE2,University Elective(2),General engineering elective.,Department approval,,2,Fall,AI Engineering
+CSE272,Parallel & Distributed Systems ,,CSE132,,3,Spring,
+CSE446,Information & Computer Networks Security ,,CSE261,,3,Spring,
+CSE464,Internet of Things,,CSE261,,3,Spring,
+CSE322,Big Data Analytics 1 ,,AIE121,,3,Spring,
+CSE392,Field Training 2 in Computer Engineering,Practical CE applications.,CSE291,,2,Spring,
+UC6,University Requirement (6),General education course.,,,2,Spring,All
+E3,Elective Course (3),,,,3,Fall,
+E4,Elective Course (4),,,,3,Fall,
+CSE465,Selected Topics in Cloud Computing ,,CSE363,,3,Fall,
+CSE493,Graduation Project 1,,,,3,Fall,
+UC7,University Requirement (7),General education course.,,,2,Fall,All
+E5,Elective Course (5),,,,3,Spring,
+E6,Elective Course (6),,,,3,Spring,
+CSE427,Selected Topics in Big Data ,,CSE322,,3,Spring,
+CSE494,Graduation Project 2,,CSE493,,3,Spring,
+UE3,University Elective(3),General engineering elective.,Department approval,,2,Fall,AI Engineering
+LAN22,English 1,English language proficiency.,,,0,,All (Mandatory)
+PSC101,Human Rights,Introduction to human rights.,,,0,,All (Mandatory)

@@ -1,0 +1,8 @@
+experta>=2.0.0
+pandas>=1.5.0
+streamlit>=1.22.0
+pytest>=7.3.1
+python-dotenv>=1.0.0
+typing-extensions>=4.5.0
+numpy>=1.24.0
+openpyxl>=3.1.0  # For Excel file support in knowledge base editor 

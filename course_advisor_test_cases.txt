@@ -1,0 +1,161 @@
+🧪 Basic Functionality Test Cases
+
+Test Case 1: Original Specification Test
+- CGPA: 3.2
+- Semester: Fall
+- Passed: MAT111, CSE014
+- Failed: (none)
+- Expected: Should recommend Fall courses where prerequisites are met, max 18 credits
+
+Test Case 2: Low CGPA Student
+- CGPA: 1.5
+- Semester: Fall
+- Passed: (none)
+- Failed: (none)
+- Expected: Max 12 credits, only basic Fall courses with no prerequisites
+
+Test Case 3: Average CGPA Student
+- CGPA: 2.5
+- Semester: Spring
+- Passed: MAT111, CSE014, MEC011, PHY212
+- Failed: (none)
+- Expected: Max 15 credits, Spring courses with prerequisites satisfied
+
+🎯 Prerequisite Testing
+
+Test Case 4: Missing Prerequisites
+- CGPA: 3.5
+- Semester: Spring
+- Passed: CSE014 (only)
+- Failed: (none)
+- Expected: Should NOT recommend MAT112 (needs MAT111), should recommend CSE015
+
+Test Case 5: Chain Prerequisites
+- CGPA: 3.8
+- Semester: Fall
+- Passed: MAT111, MAT112, CSE014, CSE015
+- Failed: (none)
+- Expected: Can recommend courses that need MAT112 as prerequisite
+
+📅 Semester Availability Testing
+
+Test Case 6: Wrong Semester
+- CGPA: 3.0
+- Semester: Summer
+- Passed: MAT111, CSE014
+- Failed: (none)
+- Expected: Very few or no recommendations (most courses are Fall/Spring only)
+
+Test Case 7: Spring Semester Student
+- CGPA: 3.4
+- Semester: Spring
+- Passed: MAT111, CSE014, MEC011, PHY212, UC1
+- Failed: (none)
+- Expected: Spring-offered courses like MAT112, CSE015, CSE316
+
+❌ Failed Course Scenarios
+
+Test Case 8: Student with Failed Courses
+- CGPA: 2.2
+- Semester: Fall
+- Passed: MAT111, CSE014
+- Failed: PHY212, MEC011
+- Expected: Failed courses should NOT be recommended, may need retaking
+
+Test Case 9: Failed Prerequisites
+- CGPA: 2.8
+- Semester: Spring
+- Passed: CSE014
+- Failed: MAT111
+- Expected: Cannot recommend MAT112 or CSE316 (need MAT111)
+
+🚫 Track Eligibility Testing
+
+Test Case 10: Track Mismatch
+- CGPA: 3.5
+- Semester: Fall
+- Passed: MAT111, CSE014
+- Failed: (none)
+- Expected: Should only get "All" and "Computer Engineering" courses, NOT AI Engineering only courses
+
+📊 Credit Limit Testing
+
+Test Case 11: Credit Limit Boundary (Low CGPA)
+- CGPA: 1.9
+- Semester: Fall
+- Passed: (none)
+- Failed: (none)
+- Expected: Exactly 12 credits max, system should stop adding courses at limit
+
+Test Case 12: Credit Limit Boundary (High CGPA)
+- CGPA: 3.9
+- Semester: Fall
+- Passed: (none)
+- Failed: (none)
+- Expected: Up to 18 credits, should recommend more courses
+
+🔄 Co-requisite Testing
+
+Test Case 13: Co-requisite Handling
+- CGPA: 3.2
+- Semester: Fall
+- Passed: MAT111, CSE014, MEC011
+- Failed: (none)
+- Expected: If courses have co-requisites, both should be recommended together
+
+🏁 Advanced Student Scenarios
+
+Test Case 14: Senior Student
+- CGPA: 3.6
+- Semester: Fall
+- Passed: MAT111, MAT112, CSE014, CSE015, CSE113, CSE131, CSE316, PHY212, MEC011, UC1, UC2, UC3, UC4
+- Failed: (none)
+- Expected: Advanced courses like CSE221, CSE233, electives
+
+Test Case 15: Struggling Student
+- CGPA: 1.8
+- Semester: Spring
+- Passed: MAT111, CSE014
+- Failed: MEC011, PHY212, UC1
+- Expected: Limited recommendations, focus on retaking failed courses
+
+🎯 Edge Cases
+
+Test Case 16: Perfect Student
+- CGPA: 4.0
+- Semester: Fall
+- Passed: (almost all courses)
+- Failed: (none)
+- Expected: Only graduation project and final electives
+
+Test Case 17: Empty Input
+- CGPA: 0.0
+- Semester: Fall
+- Passed: (none)
+- Failed: (none)
+- Expected: Error handling, no recommendations
+
+Test Case 18: Invalid CGPA
+- CGPA: 5.0
+- Semester: Fall
+- Passed: MAT111
+- Failed: (none)
+- Expected: Error handling for invalid CGPA
+
+📋 What to Check in Results
+
+1. Correct Credit Calculation: Total credits ≤ student's limit
+2. Prerequisite Validation: All prerequisites are in passed courses
+3. Semester Matching: Only courses offered in selected semester
+4. Track Eligibility: Only eligible program tracks
+5. No Duplicate Recommendations: Same course not recommended twice
+6. Clear Rejection Reasons: Explanations for non-recommended courses
+7. Proper Error Messages: Helpful feedback for invalid inputs
+
+🚀 How to Test
+
+1. Run the Streamlit app: `streamlit run app.py`
+2. Try each test case manually through the web interface
+3. Check both recommended and rejected courses
+4. Verify the reasoning provided by the system
+5. Export results to CSV and verify data accuracy
