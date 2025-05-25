@@ -130,7 +130,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- Your Name - Initial work
+- Mohamed Yasser
+- Ahmed Hanny
+- Islam Ali
+  
 
 ## 🙏 Acknowledgments
 
