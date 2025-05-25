@@ -31,17 +31,35 @@ An intelligent course recommendation system built using Python and the Experta l
 ## 📋 Project Structure
 
 ```
-project-root/
-├── README.md                 # Project documentation
-├── requirements.txt          # Project dependencies
-├── requirements-test.txt     # Test dependencies
-├── app.py                    # Main Streamlit application
-├── inference_engine.py       # Core expert system
-├── kb_editor.py             # Knowledge base editor
-├── CE_Cloud.csv             # Course database
-├── course_advisor_test_cases.txt  # Test cases
-└── docs/                    # Documentation
-    └── setup_guide.md       # Setup instructions
+prj/
+├── src/                           # Source code directory
+│   ├── Docs/                      # Documentation in src
+│   ├── app.py                     # Main application file (27KB)
+│   ├── knowledge_base_editor.py   # Knowledge base editor (5.8KB)
+│   ├── CE_Cloud.csv              # Cloud data file
+│   └── inference_engine.py        # Inference engine implementation (12KB)
+│
+├── docs/                          # Documentation directory
+│   ├── setup_guide.md            # Setup instructions (3.4KB)
+│   └── course_recommendation_report.pdf  # Project report (346KB)
+│
+├── demo/                          # Demo directory
+│   └── 2025-04-09_22-35-18.mkv   # Demo video (16MB)
+│
+├── tests/                         # Test directory
+│   └── course_advisor_test_cases.txt  # Test cases (4.4KB)
+│
+├── data/                          # Data directory
+│   └── CE_Cloud.csv              # Data file (4.1KB)
+│
+├── README.md                      # Project readme (3.9KB)
+├── LICENSE                        # License file (1.1KB)
+├── requirements.txt               # Main dependencies
+├── requirements-test.txt          # Test dependencies
+├── .gitignore                    # Git ignore file
+├── inference                      # Empty inference file
+├── __pycache__/                  # Python cache directory
+└── venv/                         # Virtual environment directory
 ```
 
 ## 🚀 Quick Start
@@ -130,7 +148,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- Your Name - Initial work
+- Mohamed Yasser
+- Ahmed Hanny
+- Islam Ali
+  
 
 ## 🙏 Acknowledgments
 
